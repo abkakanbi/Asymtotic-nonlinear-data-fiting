@@ -11,10 +11,10 @@ dfht <- read.delim("C:/Users/abu/Desktop/KT.txt",  header = TRUE, fileEncoding =
 htfit <- nls(ht250Hz ~ a + b/ag + (c/ye), data = dfht, start = c(a=1 ,b=1, c=1), trace = TRUE)
 
 ## The model produced regression sum of squares of 153820.034 and 
-## residual of sum of square 1848.966 from a total of 155669.000
+## residual sum of square 1848.966 from a total of 155669.000
 ## The pseudo R square value of 98.8, adjusted pseudo R square of 97.6 and
 ## a coefficient of determination 11 were calculated .
-## The made a 87% correct predoction on a new sample  
+## The model produced an accuracy score of 87% (correct predoction) on a new sample  
 	 
 > summary(htfit1)
 
